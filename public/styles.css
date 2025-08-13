@@ -1,0 +1,288 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #faf7f2;
+  color: #333;
+}
+
+.hero {
+  background: url('restaurant-hero.jpg') center/cover no-repeat;
+  color: #fff;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #d2691e;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #a0522d;
+}
+
+.menu-section, .about-section, .contact-section, .banquet-section {
+  padding: 60px 8%;
+  background: #fff;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.menu-section h2, .about-section h2, .contact-section h2, .banquet-section h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  background: #f8e6d8;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 400px;
+  margin: 30px auto 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  padding: 12px;
+  border: none;
+  background: #d2691e;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-section button:hover {
+  background: #a0522d;
+}
+
+/* Banquet Section Styles */
+.banquet-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banquet-pricing, .banquet-booking {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.banquet-pricing h3, .banquet-booking h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: #d2691e;
+}
+
+.pricing-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pricing-card {
+  background: #f8e6d8;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.pricing-card:hover {
+  border-color: #d2691e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(210, 105, 30, 0.15);
+}
+
+.pricing-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #d2691e;
+  font-size: 1.2rem;
+}
+
+.pricing-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a0522d;
+  margin-bottom: 15px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card li {
+  padding: 3px 0;
+  color: #555;
+}
+
+.pricing-card li:before {
+  content: "✓ ";
+  color: #d2691e;
+  font-weight: bold;
+}
+
+.booking-contact {
+  background: #f8e6d8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.booking-contact p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.banquet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.banquet-form input,
+.banquet-form select,
+.banquet-form textarea {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.banquet-form select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.banquet-form button {
+  padding: 12px;
+  border: none;
+  background: #d2691e;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.banquet-form button:hover {
+  background: #a0522d;
+}
+
+/* Responsive design for banquet section */
+@media (max-width: 768px) {
+  .banquet-content {
+    flex-direction: column;
+  }
+  
+  .pricing-options {
+    gap: 15px;
+  }
+  
+  .pricing-card {
+    padding: 15px;
+  }
+}
+
+footer {
+  background: #d2691e;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
