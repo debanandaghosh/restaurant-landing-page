@@ -67,7 +67,7 @@ nav a {
   background: #a0522d;
 }
 
-.menu-section, .about-section, .contact-section {
+.menu-section, .about-section, .contact-section, .banquet-section {
   padding: 60px 8%;
   background: #fff;
   margin: 30px 0;
@@ -75,7 +75,7 @@ nav a {
   box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
-.menu-section h2, .about-section h2, .contact-section h2 {
+.menu-section h2, .about-section h2, .contact-section h2, .banquet-section h2 {
   text-align: center;
   margin-bottom: 35px;
   font-size: 2rem;
@@ -149,4 +149,74 @@ footer {
   padding: 14px 0;
   margin-top: 24px;
   letter-spacing: 1px;
+}
+
+/* Banquet Hall Styles */
+.banquet-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.banquet-content > p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.rate-details h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #d2691e;
+}
+
+.rate-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.rate-card {
+  background: #f8e6d8;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.rate-card:hover {
+  transform: translateY(-5px);
+}
+
+.rate-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.rate-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d2691e;
+  margin-bottom: 20px;
+}
+
+.rate-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rate-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e0d4c3;
+  color: #555;
+}
+
+.rate-card li:last-child {
+  border-bottom: none;
 }
