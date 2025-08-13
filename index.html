@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>La Forchetta | Modern Italian Dining</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="La Forchetta – seasonal Italian cuisine, handcrafted pasta, wood‑fired flavors. Reserve your table today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta property="og:title" content="La Forchetta">
+  <meta property="og:description" content="Modern Italian dining — handcrafted pasta & seasonal ingredients.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta name="theme-color" content="#2d2a27">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-scroll>
+    <div class="container flex between align-center">
+      <a class="logo" href="#">
+        <img src="assets/logo.svg" alt="La Forchetta" width="140" height="40" />
+      </a>
+      <nav aria-label="Primary" class="primary-nav" id="primary-nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Menu</span>
+          <div class="hamburger" aria-hidden="true"></div>
+        </button>
+        <ul id="nav-menu" class="nav-menu" data-collapsed="true">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Story</a></li>
+            <li><a href="#reservation">Reserve</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#location">Find Us</a></li>
+          <li><a class="btn small outline" href="#reservation">Book Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <picture>
+      <source srcset="assets/hero@2x.jpg 2x, assets/hero.jpg 1x" media="(min-width: 800px)">
+      <img class="hero-bg" src="assets/hero-mobile.jpg" alt="" aria-hidden="true" />
+    </picture>
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>Seasonal Italian Crafted with Heart</h1>
+      <p>Farm‑driven ingredients, slow fermented doughs, hand‑rolled pasta, and a wood‑fired soul.</p>
+      <div class="actions">
+        <a href="#reservation" class="btn primary">Reserve a Table</a>
+        <a href="#menu" class="btn ghost">Explore Menu</a>
+      </div>
+      <ul class="hero-highlights" aria-label="Highlights">
+        <li>Handmade Pasta</li>
+        <li>Wood‑Fired Oven</li>
+        <li>Local Produce</li>
+      </ul>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Featured Menu Preview -->
+    <section class="section menu-preview" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Featured Dishes</h2>
+          <p class="section-sub">A rotating selection inspired by regional traditions & the week’s best harvest.</p>
+        </header>
+        <div class="grid cards">
+          <article class="card dish">
+            <img src="assets/dish1.jpg" alt="Truffle Tagliatelle with shaved black truffle" loading="lazy" />
+            <div class="card-body">
+              <h3>Truffle Tagliatelle</h3>
+              <p class="desc">Silky egg pasta tossed in cultured butter & Pecorino, finished with shaved black truffle.</p>
+              <p class="price">$28</p>
+            </div>
+          </article>
+          <article class="card dish">
+            <img src="assets/dish2.jpg" alt="Burrata with heirloom tomatoes and basil oil" loading="lazy" />
+            <div class="card-body">
+              <h3>Burrata Pomodoro</h3>
+              <p class="desc">Creamy burrata, compressed heirloom tomatoes, basil oil, smoked sea salt.</p>
+              <p class="price">$18</p>
+            </div>
+          </article>
+          <article class="card dish">
+            <img src="assets/dish3.jpg" alt="Wood fired pizza with charred crust and prosciutto" loading="lazy" />
+            <div class="card-body">
+              <h3>Prosciutto Pizza</h3>
+              <p class="desc">48‑hour dough, San Marzano sauce, fior di latte, arugula, aged balsamic.</p>
+              <p class="price">$22</p>
+            </div>
+          </article>
+          <article class="card dish">
+            <img src="assets/dish4.jpg" alt="Tiramisu dessert in a glass with cocoa dust" loading="lazy" />
+            <div class="card-body">
+              <h3>Espresso Tiramisu</h3>
+              <p class="desc">Marsala mascarpone layers, single origin espresso, cocoa veil.</p>
+              <p class="price">$12</p>
+            </div>
+          </article>
+        </div>
+        <div class="center mt-l">
+          <a href="menu.html" class="btn outline">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Story -->
+    <section class="section split about" id="about">
+      <div class="container split-grid">
+        <div class="media">
+          <img src="assets/chef.jpg" alt="Head chef plating a dish" loading="lazy" />
+        </div>
+        <div class="content">
+          <h2>Our Story</h2>
+          <p>La Forchetta began as a countryside dream—an ode to Sunday tables, shared bowls of pasta, and honest ingredients. We partner with small farms and mills to bring heritage grains, seasonal vegetables, and sustainable meats to your plate.</p>
+          <p>Every dough is naturally fermented. Every pasta is rolled by hand. Every plate is a quiet conversation between tradition and innovation.</p>
+          <ul class="checks">
+            <li>Locally Sourced Produce</li>
+            <li>Sustainable Seafood</li>
+            <li>Natural Wines & Amari</li>
+          </ul>
+          <a href="#reservation" class="btn primary mt-s">Book Your Experience</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="section reservation" id="reservation" aria-labelledby="reserve-heading">
+      <div class="container narrow">
+        <h2 id="reserve-heading" class="center">Reserve a Table</h2>
+        <p class="center sub">Secure your spot. Walk‑ins welcome when space permits.</p>
+        <form class="res-form" novalidate>
+            <div class="field">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" required />
+              <small class="error" data-error-for="res-date"></small>
+            </div>
+            <div class="field">
+              <label for="res-time">Time</label>
+              <input type="time" id="res-time" required />
+              <small class="error" data-error-for="res-time"></small>
+            </div>
+            <div class="field">
+              <label for="res-party">Party Size</label>
+              <select id="res-party" required>
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8+</option>
+              </select>
+              <small class="error" data-error-for="res-party"></small>
+            </div>
+            <div class="field full">
+              <label for="res-name">Full Name</label>
+              <input type="text" id="res-name" placeholder="Jane Doe" required />
+              <small class="error" data-error-for="res-name"></small>
+            </div>
+            <div class="field full">
+              <label for="res-phone">Phone</label>
+              <input type="tel" id="res-phone" placeholder="+1 555 123 9876" required inputmode="tel" />
+              <small class="error" data-error-for="res-phone"></small>
+            </div>
+            <div class="field full">
+              <label for="res-notes">Special Requests (optional)</label>
+              <textarea id="res-notes" rows="3" placeholder="Allergies, celebrations…"></textarea>
+            </div>
+            <div class="field full checkbox">
+              <input type="checkbox" id="newsletter-opt" />
+              <label for="newsletter-opt">Subscribe to seasonal menu updates</label>
+            </div>
+            <div class="actions">
+              <button type="submit" class="btn primary">Check Availability</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </div>
+        </form>
+        <p class="terms center">By booking you agree to our <a href="#">reservation policy</a>.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" aria-label="Guest testimonials">
+      <div class="container">
+        <h2 class="center">What Guests Are Saying</h2>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" aria-label="Previous testimonial">&larr;</button>
+          <div class="carousel-track">
+            <figure class="testimonial">
+              <blockquote>Every dish told a story. The pasta texture alone is worth the visit.</blockquote>
+              <figcaption>&mdash; Elena R.</figcaption>
+            </figure>
+            <figure class="testimonial">
+              <blockquote>Thoughtful, seasonal, and deeply comforting. The service felt like family.</blockquote>
+              <figcaption>&mdash; Marcus T.</figcaption>
+            </figure>
+            <figure class="testimonial">
+              <blockquote>Best tiramisu I've had outside of Italy. Atmosphere is warm and intimate.</blockquote>
+              <figcaption>&mdash; Priya S.</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn next" aria-label="Next testimonial">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery" aria-label="Photo gallery">
+      <div class="container">
+        <h2 class="center">In the Kitchen & Beyond</h2>
+        <div class="masonry">
+          <figure class="g-item">
+            <img src="assets/gallery1.jpg" alt="Wood fired oven flames" loading="lazy" />
+          </figure>
+            <figure class="g-item tall">
+              <img src="assets/gallery2.jpg" alt="Chef sprinkling herbs" loading="lazy" />
+            </figure>
+          <figure class="g-item wide">
+            <img src="assets/gallery3.jpg" alt="Table setting with candlelight" loading="lazy" />
+          </figure>
+          <figure class="g-item">
+            <img src="assets/gallery4.jpg" alt="Fresh handmade pasta strands" loading="lazy" />
+          </figure>
+          <figure class="g-item">
+            <img src="assets/gallery5.jpg" alt="Colorful heirloom tomatoes" loading="lazy" />
+          </figure>
+          <figure class="g-item wide">
+            <img src="assets/gallery6.jpg" alt="Guests toasting glasses of wine" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location / Map -->
+    <section class="section location" id="location">
+      <div class="container split-grid">
+        <div class="content">
+          <h2>Visit Us</h2>
+          <address>
+            123 Olive Grove Lane<br>
+            Greenhaven District<br>
+            Portland, OR 97201<br>
+            <a href="tel:+15551239876">+1 (555) 123‑9876</a>
+          </address>
+          <p class="hours-label"><strong>Hours</strong></p>
+          <ul class="hours">
+            <li>Mon–Thu 5:00–10:00 PM</li>
+            <li>Fri 5:00–11:00 PM</li>
+            <li>Sat 4:00–11:00 PM</li>
+            <li>Sun 4:00–9:00 PM</li>
+          </ul>
+          <p><a href="https://maps.google.com" target="_blank" rel="noopener">Open in Maps ↗</a></p>
+        </div>
+        <div class="map-embed">
+          <iframe title="Map" loading="lazy" src="https://maps.google.com/maps?q=Portland%20Oregon&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter" aria-labelledby="news-heading">
+      <div class="container narrow">
+        <h2 id="news-heading" class="center">Seasonal Newsletter</h2>
+        <p class="center sub">New menus, special wine dinners & chef’s table announcements.</p>
+        <form class="news-form" novalidate>
+          <div class="field">
+            <label for="news-email">Email</label>
+            <input id="news-email" type="email" required placeholder="you@example.com" />
+            <small class="error" data-error-for="news-email"></small>
+          </div>
+          <button class="btn primary" type="submit">Subscribe</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo-light.svg" alt="La Forchetta" class="footer-logo" width="150" height="50" />
+        <p class="foot-note">Modern Italian dining with roots in tradition.</p>
+        <ul class="social" aria-label="Social media">
+          <li><a href="#" aria-label="Instagram"><svg aria-hidden="true" width="20" height="20"><use href="assets/icons.svg#instagram"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook"><svg aria-hidden="true" width="20" height="20"><use href="assets/icons.svg#facebook"/></svg></a></li>
+          <li><a href="#" aria-label="TikTok"><svg aria-hidden="true" width="20" height="20"><use href="assets/icons.svg#tiktok"/></svg></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="foot-head">Explore</h3>
+        <ul class="foot-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="foot-head">Policies</h3>
+        <ul class="foot-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Allergens</a></li>
+          <li><a href="#">Cancellations</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="foot-head">Contact</h3>
+        <p><a href="mailto:hello@laforchetta.example">hello@laforchetta.example</a></p>
+        <p><a href="tel:+15551239876">+1 (555) 123‑9876</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="year"></span> La Forchetta. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
